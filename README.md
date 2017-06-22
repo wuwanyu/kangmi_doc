@@ -2,32 +2,6 @@ medicalManage后台接口文档
 ---------------------------
 
 
-修改记录：
-| 序号   | 修改日期       | 修该目录号                 | 修改说明                               |
-| ---- | ---------- | ------------------------------- | ----------------- |
-| 12      |2017.4.23 | 14.1 add：新增项目描述|新增|
-| 12      |2017.4.23 | 14.2 getOne：根据medicItemId，获取描述|新增|
-| 12      |2017.4.23 | 14.3 delete：删除|新增|
-| 12      |2017.4.23 | 5.19_1 getMyPraiseList：根据userid，获取我点赞的列表|新增|
-| 12      |2017.4.23 |5.19_2 getMyPraisedList：根据userid，获取点赞我的列表|新增|
-| 12      |2017.4.23 |5.20_1 getMyCommentList：根据userid，获取我评论的列表|新增|
-| 12      |2017.4.23 |5.20_2 getMyCommentedList：根据userid，获取评论我的列表|新增|
-| 11      |2017.4.4 | 5.15_1 getNoteFromFocusMeUser：根据userid，获取关注我的用户的日记 |新增|
-| 11      |2017.4.4 | 5.17 getHotLabelListOfPost：获取热门日记标签 |新增|
-| 11      |2017.4.4 | 7.7_2 根据昵称/手机号查询用户|新增|
-| 10      |2017.3.10 | 3.7 getMyFocusCommunity：获取我关注的社区|新增接口 |
-| 9      |2017.3.10 |  3.8 getHotCommunityBesideMyFocus：获取热门社区，不包括我关注的社区|新增接口 |
-| 8      |2017.3.10 | 3.9 getPostFromMyFocusCommunity：获取我关注的社区的发帖|新增接口 |
-| 7      |2017.3.10 | 5.15 getNoteFromMyFocusUser：根据userid，获取我关注的用户的日记|新增接口 |
-| 6      |2017.3.10 |  5.16 getPostFromMyFocusUser：根据userid，获取我关注的用户的帖子|新增接口 
-| 5      |2017.2.28 |  13.2 getListByAccount：获取群发消息记录|新增接口 
-| 4      |2017.2.28 |  13.1 add：新增一条群发消息记录|新增接口 
-| 3      |2017.2.28 |  4.7 updateRelationAboutGroup：修改好友所在的群组[批量]|新增接口 
-| 2      |2017.2.28 |  4.6 updateRelationAboutImFriend：审核好友申请 |新增接口 | 
-| 1      |2017.2.28 |  4.5 getImFriendApplyList：获取好友申请列表 |新增接口 | 
-；
-
-
 测试：http://120.25.124.68:5001/medicalManage/api/xxx （using）
 开发：http://120.25.124.68:5000/medicalManage/api/xxx
 *  [0. 通用接口](#1)
