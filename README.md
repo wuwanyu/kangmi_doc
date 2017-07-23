@@ -977,23 +977,29 @@ http://120.25.124.68:5001/medicalManage/api/news/addNews
 
 返回值：
 ```
+
+typeId:3
+typeName:热点
+title:奥迪二手车广告引争议：婆婆捏儿媳口鼻查验惹来众怒
+content:博鳌•21世纪房地产论坛第17届年会于7月21日-24日在海南三亚隆重举行。论坛由南方财经全媒体集团旗下《21世纪经济报道》于2001年主办发起，全联房地产商会联合主办，是中国目前规格最高，影响最大的房地产专业论坛之一。本届年会主题为“强监管与去杠杆：地产结构性变革的窗口期”。　↵↵　　【观点速览】任志强：今年房地产销售面积、销售额都会创历史新高↵↵　　当前房地产各种指标中，一个要看土地另一个要看新开工数据。从目前的情况看，今年房地产从销售面积到销售金额都会创历史新高，哪怕只有1%的增长。有谁认为我们的黄金时代已经过去了？但为什么我们的数据仍在增长呢？
+from: 21世纪经济报道
+level:
+
 {
-  "code": "200",
-  "msg": "创建成功！",
-  "item": {
-    "typeId": "ae198ba0-b5fa-11e6-bbb2-0fcd9912076d",  //新闻类型id
-    "typeName": "热点",  //新闻类型名称
-    "title": "上海天津限购后房贷出现新一轮收紧",  //新闻标题
-    "content": "28日，天津、上海同时发布收紧房贷政策。这意味着，继新一轮限购收紧后，新一轮限贷拉开帷幕。",  //新闻内容
-    "from": "经济参考报",   //新闻来源
-    "icon": "http://120.25.124.68:5000/upload/image/DSC_0005.JPG",   //新闻图标
-    "newsId": "cc2c5d40-b62a-11e6-b4a2-b5f0bfcaa19f",  //新闻id
-    "level": "0",   //新闻等级，0：普通新闻
-    "datems": "1480420561174",  //创建日期时间戳
-    "createdAt": "2016-11-29T11:56:01.397Z",
-    "updatedAt": "2016-11-29T11:56:01.398Z",
-    "id": 1
-  }
+    "code": "200",
+    "msg": "创建成功！",
+    "item": {
+        "typeId": "3",
+        "typeName": "热点",
+        "title": "奥迪二手车广告引争议：婆婆捏儿媳口鼻查验惹来众怒",
+        "content": "博鳌•21世纪房地产论坛第17届年会于7月21日-24日在海南三亚隆重举行。论坛由南方财经全媒体集团旗下《21世纪经济报道》于2001年主办发起，全联房地产商会联合主办，是中国目前规格最高，影响最大的房地产专业论坛之一。本届年会主题为“强监管与去杠杆：地产结构性变革的窗口期”。　\n\n　　【观点速览】任志强：今年房地产销售面积、销售额都会创历史新高\n\n　　当前房地产各种指标中，一个要看土地另一个要看新开工数据。从目前的情况看，今年房地产从销售面积到销售金额都会创历史新高，哪怕只有1%的增长。有谁认为我们的黄金时代已经过去了？但为什么我们的数据仍在增长呢？",
+        "from": " 21世纪经济报道",
+        "level": "",
+        "icon": "http://120.25.124.68:5001/upload/image/in37F0PVpIC1tUKZ0TdV2SEJ.jpg",
+        "createdAt": "2017-07-23T08:51:59.634Z",
+        "updatedAt": "2017-07-23T08:51:59.634Z",
+        "newsId": 14
+    }
 }
 ```
 <a name="12"></a>
@@ -1014,23 +1020,24 @@ level:		新闻等级
 http://120.25.124.68:5001/medicalManage/api/news/updateNews
 
 ```
+title:任志强：今年房地产销售面积销售额都会创历史新高
+newsId:14
+
 {
-  "code": "200",
-  "msg": "修改成功！",
-  "item": {
-    "id": 1,
-    "newsId": "cc2c5d40-b62a-11e6-b4a2-b5f0bfcaa19f",
-    "level": "0",
-    "typeId": "ae198ba0-b5fa-11e6-bbb2-0fcd9912076d",
-    "typeName": "热点",
-    "title": "上海天津限购后房贷出现新一轮收紧",
-    "icon": "http://120.25.124.68:5000/upload/image/DSC_0005.JPG",
-    "content": "28日，天津、上海同时发布收紧房贷政策。这意味着，继新一轮限购收紧后，新一轮限贷拉开帷幕。",
-    "from": "经济参考报",
-    "datems": "1480420561174",
-    "createdAt": "2016-11-29T11:56:01.000Z",
-    "updatedAt": "2016-11-29T11:56:01.000Z"
-  }
+    "code": "200",
+    "msg": "修改成功！",
+    "item": {
+        "newsId": 14,
+        "level": "",
+        "typeId": "3",
+        "typeName": "热点",
+        "title": "任志强：今年房地产销售面积销售额都会创历史新高",
+        "icon": "http://120.25.124.68:5001/upload/image/in37F0PVpIC1tUKZ0TdV2SEJ.jpg",
+        "content": "博鳌•21世纪房地产论坛第17届年会于7月21日-24日在海南三亚隆重举行。论坛由南方财经全媒体集团旗下《21世纪经济报道》于2001年主办发起，全联房地产商会联合主办，是中国目前规格最高，影响最大的房地产专业论坛之一。本届年会主题为“强监管与去杠杆：地产结构性变革的窗口期”。　\n\n　　【观点速览】任志强：今年房地产销售面积、销售额都会创历史新高\n\n　　当前房地产各种指标中，一个要看土地另一个要看新开工数据。从目前的情况看，今年房地产从销售面积到销售金额都会创历史新高，哪怕只有1%的增长。有谁认为我们的黄金时代已经过去了？但为什么我们的数据仍在增长呢？",
+        "from": " 21世纪经济报道",
+        "createdAt": "2017-07-23T08:51:59.000Z",
+        "updatedAt": "2017-07-23T08:51:59.000Z"
+    }
 }
 ```
 <a name="13"></a>
@@ -1079,30 +1086,74 @@ typeId:		类型id
 http://120.25.124.68:5001/medicalManage/api/news/getListByTypeId
 
 ```
+typeId:1
+
 {
-  "code": "200",
-  "msg": "获取列表成功",
-  "count": 2,
-  "list": [
-    {
-      "id": 2,
-      "newsId": "ec480d20-b62c-11e6-8649-6b1b6518e324",
-      "level": "0",
-      "typeId": "ae198ba0-b5fa-11e6-bbb2-0fcd9912076d",
-      "typeName": "热点",
-      "title": "上汽奥迪渠道之争能否借鉴特斯拉？",
-      "icon": null,
-      "content": "“现在经销商空前团结，几乎所有的一汽奥迪经销商都加入了流通协会的奥迪经销商联会，现在来看，12月1日不提车是大概率事件。”11月27日，一位参与佛山会议的奥迪经销商在接受21世纪经济报道记者采访时表示。",
-      "from": "经济参考报",
-      "datems": "1480421474035",
-      "createdAt": "2016-11-29T12:11:14.000Z",
-      "updatedAt": "2016-11-29T12:11:14.000Z",
-      "collect_count": null,  //收藏量
-      "praise_count": null,  // 点赞量
-      "comment_count": null  //评论量
-    },
- ...
-  ]
+    "code": "200",
+    "msg": "获取列表成功",
+    "count": 4,
+    "list": [
+        {
+            "newsId": 13,
+            "level": "0",
+            "typeId": "1",
+            "typeName": "推荐",
+            "title": "标题",
+            "icon": "http://120.25.124.68:5001/upload/image/rpIV24wm6djC3JZZFWM9gk7B.jpg",
+            "content": "<p>我是一只可爱的猫咪，喵喵喵</p>",
+            "from": "自媒体",
+            "createdAt": "2017-05-21T02:41:18.000Z",
+            "updatedAt": "2017-05-21T02:41:18.000Z",
+            "collect_count": null,
+            "praise_count": null,
+            "comment_count": null
+        },
+        {
+            "newsId": 12,
+            "level": "0",
+            "typeId": "1",
+            "typeName": "推荐",
+            "title": "我是一颗，小小的石头...",
+            "icon": "http://120.25.124.68:5001/upload/image/AXYzl193yNgpuRnhnxo7PuMa.jpg",
+            "content": "深深埋在，泥土之中。你的影子，我看不见...",
+            "from": "腾讯网",
+            "createdAt": "2017-03-21T07:15:51.000Z",
+            "updatedAt": "2017-03-21T07:15:51.000Z",
+            "collect_count": null,
+            "praise_count": null,
+            "comment_count": null
+        },
+        {
+            "newsId": 2,
+            "level": "0",
+            "typeId": "1",
+            "typeName": "推荐",
+            "title": "上汽奥迪渠道之争能否借鉴特斯拉？",
+            "icon": "",
+            "content": "“现在经销商空前团结，几乎所有的一汽奥迪经销商都加入了流通协会的奥迪经销商联会，现在来看，12月1日不提车是大概率事件。”11月27日，一位参与佛山会议的奥迪经销商在接受21世纪经济报道记者采访时表示。",
+            "from": "经济参考报",
+            "createdAt": "2016-11-29T12:11:14.000Z",
+            "updatedAt": "2016-11-29T12:11:14.000Z",
+            "collect_count": null,
+            "praise_count": null,
+            "comment_count": 6
+        },
+        {
+            "newsId": 1,
+            "level": "0",
+            "typeId": "1",
+            "typeName": "推荐",
+            "title": "上海天津限购后房贷出现新一轮收紧",
+            "icon": "http://120.25.124.68:5001/upload/image/DSC_0005.JPG",
+            "content": "28日，天津、上海同时发布收紧房贷政策。这意味着，继新一轮限购收紧后，新一轮限贷拉开帷幕。",
+            "from": "经济参考报",
+            "createdAt": "2016-11-29T11:56:01.000Z",
+            "updatedAt": "2016-11-29T11:56:01.000Z",
+            "collect_count": null,
+            "praise_count": null,
+            "comment_count": 32
+        }
+    ]
 }
 
 ```
@@ -1112,33 +1163,38 @@ http://120.25.124.68:5001/medicalManage/api/news/getListByTypeId
 方法：post
 参数：
 newsId:	新闻id
+userId:用户id
 
 地址：
 http://120.25.124.68:5001/medicalManage/api/news/getInfoByNewsId
 
 ```
+newsId:1
+userId:13
+
 {
-  "code": "200",
-  "msg": "获取详情成功",
-  "ifPraise": "null",
-  "item": {
-    "id": 2,
-    "newsId": "ec480d20-b62c-11e6-8649-6b1b6518e324",
-    "level": "0",
-    "typeId": "ae198ba0-b5fa-11e6-bbb2-0fcd9912076d",
-    "typeName": "热点",
-    "title": "上汽奥迪渠道之争能否借鉴特斯拉？",
-    "icon": null,
-    "content": "“现在经销商空前团结，几乎所有的一汽奥迪经销商都加入了流通协会的奥迪经销商联会，现在来看，12月1日不提车是大概率事件。”11月27日，一位参与佛山会议的奥迪经销商在接受21世纪经济报道记者采访时表示。",
-    "from": "经济参考报",
-    "datems": "1480421474035",
-    "createdAt": "2016-11-29T12:11:14.000Z",
-    "updatedAt": "2016-11-29T12:11:14.000Z",
-    "collect_count": 0,  //收藏量
-    "praise_count": 0,  // 点赞量
-    "comment_count": 0,  //评论量
-    "shared_page_url": "http://120.25.124.68:5001/medicalManage/mobile/news?news_id=ec480d20-b62c-11e6-8649-6b1b6518e324"  //分享地址
-  }
+    "code": "200",
+    "msg": "获取详情成功",
+    "ifPraise": "yes",
+    "item": {
+        "newsId": 1,
+        "level": "0",
+        "typeId": "1",
+        "typeName": "推荐",
+        "title": "上海天津限购后房贷出现新一轮收紧",
+        "icon": "http://120.25.124.68:5001/upload/image/DSC_0005.JPG",
+        "content": "28日，天津、上海同时发布收紧房贷政策。这意味着，继新一轮限购收紧后，新一轮限贷拉开帷幕。",
+        "from": "经济参考报",
+        "createdAt": "2016-11-29T11:56:01.000Z",
+        "updatedAt": "2016-11-29T11:56:01.000Z",
+        "collect_count": 1,
+        "praise_count": 2,
+        "comment_count": 32,
+        "if_praise": 1,
+        "if_collect": 1,
+        "if_subscribe": null,
+        "shared_page_url": "http://120.25.124.68:5001/medicalManage/mobile/news?newsId=1"
+    }
 }
 
 ```
@@ -1159,48 +1215,46 @@ newsId:cc2c5d40-b62a-11e6-b4a2-b5f0bfcaa19f
 {
   "code": "200",
   "msg": "获取详情成功",
-  "ifPraise": "null",
-  "item": {
-    "id": 2,
-    "newsId": "ec480d20-b62c-11e6-8649-6b1b6518e324",
-    "level": "0",
-    "typeId": "ae198ba0-b5fa-11e6-bbb2-0fcd9912076d",
-    "typeName": "热点",
-    "title": "上汽奥迪渠道之争能否借鉴特斯拉？",
-    "icon": null,
-    "content": "“现在经销商空前团结，几乎所有的一汽奥迪经销商都加入了流通协会的奥迪经销商联会，现在来看，12月1日不提车是大概率事件。”11月27日，一位参与佛山会议的奥迪经销商在接受21世纪经济报道记者采访时表示。",
-    "from": "经济参考报",
-    "datems": "1480421474035",
-    "createdAt": "2016-11-29T12:11:14.000Z",
-    "updatedAt": "2016-11-29T12:11:14.000Z",
-   "collect_count": 0,  //收藏量
-    "praise_count": 0,  // 点赞量
-    "comment_count": 0,  //评论量
-    "if_praise": null,  //是否点赞
-    "if_collect": null,//是否收藏
-    "if_subscribe": 1,//是否订阅
-    "shared_page_url": "http://120.25.124.68:5001/medicalManage/mobile/news?news_id=ec480d20-b62c-11e6-8649-6b1b6518e324"  //分享地址
-  },
+  "ifPraise": "yes",
+ "item": {
+        "newsId": 1,
+        "level": "0",
+        "typeId": "1",
+        "typeName": "推荐",
+        "title": "上海天津限购后房贷出现新一轮收紧",
+        "icon": "http://120.25.124.68:5001/upload/image/DSC_0005.JPG",
+        "content": "28日，天津、上海同时发布收紧房贷政策。这意味着，继新一轮限购收紧后，新一轮限贷拉开帷幕。",
+        "from": "经济参考报",
+        "createdAt": "2016-11-29T11:56:01.000Z",
+        "updatedAt": "2016-11-29T11:56:01.000Z",
+        "collect_count": 1,
+        "praise_count": 2,
+        "comment_count": 32,
+        "if_praise": 1,
+        "if_collect": 1,
+        "if_subscribe": null,
+        "shared_page_url": "http://120.25.124.68:5001/medicalManage/mobile/news?newsId=1"
+    },
   "commentlist": [
     {
-    "id": 1,
-      "commentId": "98bafc70-b632-11e6-a1f1-2f9175fb66f5",
-      "parentId": 0,
-      "objId": "cc2c5d40-b62a-11e6-b4a2-b5f0bfcaa19f",
-      "objType": "news",
-      "userId": "db8ebf20-baae-11e6-b180-872a6e363290",
-      "content": "又限购？可是又管我什么事呢",
-      "createdAt": "2016-11-29T12:51:50.000Z",
-      "updatedAt": "2016-11-29T12:51:50.000Z",
-      "comment_userId": "db8ebf20-baae-11e6-b180-872a6e363290",  //评论人
-      "comment_userName": "小蔡",
-      "comment_userIcon": "image/DSC_0005.JPG",
-      "commented_userId": null,  //被评论人
-      "commented_userName": null,
-      "commented_userIcon": null,
-      "praise_count": 1,  //点赞量
-      "if_praise": null  //是否点赞
-      }    ... ]
+            "commentId": 124,
+            "parentId": "74",
+            "star": 5,
+            "objId": "1",
+            "objType": "note",
+            "userId": "13",
+            "content": "咋地啦八点",
+            "createdAt": "2017-04-25T07:46:50.000Z",
+            "updatedAt": "2017-04-25T07:46:50.000Z",
+            "comment_userId": 13,
+            "comment_userName": "奈何一笑",
+            "comment_userIcon": "http://120.25.124.68:5001/upload/other/tq1m8mkv3ZafBFj6yr233iXT.png",
+            "commented_userId": 13,
+            "commented_userName": "奈何一笑",
+            "commented_userIcon": "http://120.25.124.68:5001/upload/other/tq1m8mkv3ZafBFj6yr233iXT.png",
+            "praise_count": null,
+            "if_praise": null
+        }, ... ]
 }
 ```
 <a name="2"></a>
@@ -4887,12 +4941,13 @@ userId:登陆用户的id
 http://120.25.124.68:5001/medicalManage/api/user/getPersonHomePage
 
 ```
-friendId:e86fad20-b91a-11e6-945f-71d86d0db9d0
+friendId:13
+userId:8
 
 {
   "code": "200",
   "msg": "获取列表成功！",
-  "isFocused": "null",
+   "isFocused": "yes",
   "userInfo": {
     "userId": "e86fad20-b91a-11e6-945f-71d86d0db9d0",
     "name": "冷心真心傻傻",
@@ -5099,7 +5154,7 @@ http://120.25.124.68:5001/medicalManage/api/user/getUserListByAccount
 ```
 accountStr:18233561908,18233561909
 mobiNameStr:小吴,小妹
-userId:e86fad20-b91a-11e6-945f-71d86d0db9d0
+userId:13
 
 {
   "code": "200",
@@ -5267,7 +5322,7 @@ http://localhost:5001/medicalManage/api/user/getCommentListByUserId
 
 
 ```
-userId:e86fad20-b91a-11e6-945f-71d86d0db9d0
+userId:13
 
 {
   "code": "200",
@@ -5304,7 +5359,7 @@ page:页数，首页为1，默认为1
 limit:每页条数，默认10
 
 地址：
-http://localhost:5001/medicalManage/api/user/getPostPraiseListByUserId
+http://localhost:5001/medicalManage/api/user/getPraiseListByUserId
 
 
 ```
