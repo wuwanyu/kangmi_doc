@@ -3294,8 +3294,17 @@ labelId:  //标签id，多个之间用0x01分隔
 labelName:  //标签名称，多个之间用0x01分隔
 parentId:  //社区id/日记本id，多个之间用0x01分隔
 parentName:   //type=post：parentId是社区id、type=note：parentId是日记本id。多个之间用0x01分隔
-type:帖子：post，日记：note。不传默认是post,
+type:帖子：post，日记：note。不传默认是post
 
+--20200120新增以下4字段，多个之间用0x01分隔
+hostId：//医院id  
+hostName：//医院名称，多个之间用0x01分隔
+orderId：//订单ID，多个之间用0x01分隔
+orderName：//订单名称，多个之间用0x01分隔
+proId:项目Id，多个之间用0x01分隔
+proName:项目名称，多个之间用0x01分隔
+doctorId：//医生id  
+doctorName：//医生名称，多个之间用0x01分隔
 
 地址：
 http://120.25.124.68:5001/medicalManage/api/post/add
@@ -3310,6 +3319,14 @@ typeName:精选
 type:note
 parentId: 
 parentName: 
+hostId：
+hostName：
+orderId：
+orderName：
+proId:
+proName:
+doctorId：  
+doctorName：
 
 {
   "code": "200",
@@ -3486,46 +3503,133 @@ type:post/note，帖子/日记
 http://120.25.124.68:5001/medicalManage/api/post/getInfo
 
 ```
-postId:5999bf80-edc4-11e6-89e4-0fabf77c2771
+postId:26
 userId:4b213800-c35a-11e6-a2cd-e377470ab12b
 
 {
-  "code": "200",
-  "msg": "获取信息成功！",
-  "post": {
-    "userId": "4b213800-c35a-11e6-a2cd-e377470ab12b",
-    "name": "奈何一笑",
-    "account": "18867365368",
-     "icon": "http://120.25.124.68:5001/upload/other/tq1m8mkv3ZafBFj6yr233iXT.png",
-    "sex": "男",
-    "age": "23",
-    "proName": null,
-    "cityName": null,
-    "disName": null,
-    "id": 11,
-    "postId": "5999bf80-edc4-11e6-89e4-0fabf77c2771",
-    "labelId": null,
-    "labelName": null,
-    "typeId": "52354ee0-c5fa-11e6-9c21-9ff2d56ab9f3\u0001f259d960-b612-11e6-b7e2-f9d10cb04b78",
-    "typeName": "喇叭花",
-    "parentId": "9325bd70-c656-11e6-8ca5-37b03af6926d",
-    "parentName": "瘦身减肥",
-    "title": "切开双眼皮\u0001长沙亚韩整形记录",
-    "content": "就弄Monmouth",
-    "images": "http://120.25.124.68:5001/upload/image/IMG_20170206_181944.jpg\u0001http://120.25.124.68:5001/upload/image/IMG_20170205_210933.jpg",
-    "level": null,
-    "type": "post",
-    "createdAt": "2017-02-08T06:03:45.000Z",
-    "updatedAt": "2017-02-08T06:03:45.000Z",
-    "share_count": 0,
-    "collect_count": 1,
-    "praise_count": 1,
-    "comment_count": 17,
-   "if_focus_user": null,
-    "if_praise_post": 1,
-    "if_collect_post": 1,
-    "shared_page_url": "http://120.25.124.68:5001/medicalManage/mobile/post?postId=5999bf80-edc4-11e6-89e4-0fabf77c2771"
-  }
+    "code": "200",
+    "msg": "获取信息成功！",
+    "post": {
+        "userId": "8",
+        "name": "冷心真心傻傻",
+        "account": "18233561909",
+        "icon": "http://xxx:5001/upload/image/DSC_0005.JPG",
+        "sex": "女",
+        "age": "18",
+        "proName":"海威玻尿酸注射隆鼻丰下巴保湿补水填充塑体微整形 【八大处隆鼻专家刘暾】 坐镇鼻整形 鼻子问题一网打尽 海威玻尿酸注射隆鼻",
+        "cityName": "",
+        "disName": "",
+        "postId": 26,
+        "labelId":"8.061.063.0",
+        "labelName":"开外眼角生活记录学习记录",
+        "itemId":"14",
+        "itemName": null,
+        "typeId": null,
+        "typeName": null,
+        "parentId": null,
+        "parentName": null,
+        "title": "笔记2020",
+        "content": "笔记2020笔记2020",
+        "images": "http://xxx:5001/upload/image/IA2ZEDW4aNDPFSzfm06Snu5E.jpg",
+        "level": null,
+        "type": "note",
+        "hostId":"13",
+        "hostName":"长沙亚韩医学美容医院长沙艾尔医疗整形医院二院",
+        "orderId": "1",
+        "orderName": "",
+        "proId":"142",
+        "doctorId":"1218",
+        "doctorName":"李某某丁医生",
+        "createdAt": "2020-01-20T07:22:34.000Z",
+        "updatedAt": "2020-01-20T07:22:34.000Z",
+        "share_count": 0,
+        "collect_count": 0,
+        "praise_count": 0,
+        "comment_count": 0,
+        "if_focus_user": 4,
+        "if_praise_post": null,
+        "if_collect_post": null,
+        "shared_page_url": "http://xxx:5001/medicalManage/mobile/post?postId=26"
+    },
+    "hostList": [
+        {
+            "hosId": 1,
+            "hosName": "长沙亚韩医学美容医院",
+            "hosType":"专科整形美容",
+            "hosTypeId":"11",
+            "proName": "湖南省",
+            "proId": "18",
+            "cityName": "长沙市",
+            "cityId": "177",
+            "disName": "岳麓区",
+            "disId": "1558",
+            "hosAddress": " 咸嘉湖路1076 ",
+            "hosPhone": "(0731)88940736",
+            "hosLevel": "三级甲等",
+            "hosIcon": "other/u=3515680927,3069006402&fm=58&s=9C0E7C329AF5588041C0DBFF03007024.jpg",
+            "hosImages":"other/55e736d12f2eb9387d72d2f7d5628535e5dd6f9c.jpgother/u=175707136,2835784752&fm=23&gp=0.jpgother/u=2398874369,3614038171&fm=23&gp=0.jpg",
+            "hosNature": "民营医疗美容诊所",
+            "hosGoodAt": "医疗美容&微整形",
+            "hosMap": null,
+            "hosDes": "长沙艾尔医疗整形医院多年专注医疗美容事业，经验丰富，值得信赖",
+            "ifAuthed": "no",
+            "dig_ID": null,
+            "createdAt": "2017-01-07T07:50:30.000Z",
+            "updatedAt": "2017-01-07T07:50:30.000Z"
+        }
+    ],
+    "proList": [
+        {
+            "proId": 1,
+            "proName": "海威玻尿酸注射隆鼻丰下巴保湿补水填充塑体微整形",
+            "proPrice": "1999",
+            "proPrePrice": "2000",
+            "proImages":"other/u=4034780701,2315121927&fm=23&gp=0.jpgother/u=4259816641,3670994149&fm=73.jpg",
+            "proDes": "海威玻尿酸注射隆鼻丰下巴保湿补水填充塑体微整形",
+            "proDetail": "图文介绍图文介绍图文介绍图文介绍图文介绍",
+            "proWarning": "购买须知购买须知购买须知购买须知",
+            "hosId": "1",
+            "hosName": "长沙亚韩医学美容医院",
+            "docId": "12",
+            "docName": "李某某",
+            "createdAt": "2017-01-08T02:11:10.000Z",
+            "updatedAt": "2017-01-08T02:11:10.000Z"
+        }
+    ],
+    "docList": [
+        {
+            "userId": 12,
+            "name": "李某某",
+            "password": "wang123456789",
+            "account": "18867365367",
+            "hosName": "长沙亚韩医学美容医院",
+            "hosId": "1",
+            "roomName": "",
+            "roomId": "",
+            "docTitle": "",
+            "docPhone": "",
+            "docGoodAt": "",
+            "idCardNum": "",
+            "proName": "",
+            "proId": "",
+            "cityName": "",
+            "cityId": "",
+            "disName": "",
+            "disId": "",
+            "address": "",
+            "type": "doctor",
+            "icon": "",
+            "sex": "",
+            "age": "",
+            "desc": "",
+            "points": "10",
+            "platform": "doctor",
+            "ifAuthed": "",
+            "dig_ID": null,
+            "createdAt": "2016-12-10T08:44:37.000Z",
+            "updatedAt": "2016-12-10T08:44:37.000Z"
+        }
+    ]
 }
 ```
 
