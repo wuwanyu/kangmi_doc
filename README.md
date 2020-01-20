@@ -178,15 +178,15 @@ medicalManage后台接口文档
 <a name="01"></a>
 #### 0.1 message：获取短信验证码
 - 接口地址：/medicalManage/system/message
-方法：post
-参数：
-mobile:
-action:  forget/register
-platform:resident/doctor
+	方法：post
+	参数：
+	mobile:
+	action:  forget/register
+	platform:resident/doctor
 
-逻辑说明:
-action = register时，通过 mobile +platform 查找用户，若用户不存在，则发送短信，否则提示错误信息；
-action = forget时，通过 mobile +platform 查找用户，若用户存在，则发送短信，否则提示错误信息；
+	逻辑说明:
+	action = register时，通过 mobile +platform 查找用户，若用户不存在，则发送短信，否则提示错误信息；
+	action = forget时，通过 mobile +platform 查找用户，若用户存在，则发送短信，否则提示错误信息；
 
 
 | 序号       |platform | action|   说明|
@@ -243,9 +243,9 @@ platform:resident
 <a name="02"></a>
 #### 0.2 province：根据省id，获取市列表
 - 接口地址：/medicalManage/system/province
-方法：post
-参数：
-keyword:
+	方法：post
+	参数：
+	keyword:
 
 ```
 keyword:河
@@ -274,10 +274,10 @@ keyword:河
 <a name="03"></a>
 #### 0.3 city：根据市id，获取区列表
 - 接口地址：/medicalManage/system/city
-方法：post
-参数：
-ProID: 所属省id
-keyword:市名关键字
+	方法：post
+	参数：
+	ProID: 所属省id
+	keyword:市名关键字
 
 ```
 ProID:12
