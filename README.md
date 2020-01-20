@@ -3296,7 +3296,7 @@ typeName:我的同事
 - parentName:   //type=post：parentId是社区id、type=note：parentId是日记本id。多个之间用0x01分隔
 - type:帖子：post，日记：note。不传默认是post
 - 
-- --20200120新增以下4字段，多个之间用0x01分隔
+- --20200120新增以下字段，多个之间用0x01分隔
 - hostId：//医院id  
 - hostName：//医院名称，多个之间用0x01分隔
 - orderId：//订单ID，多个之间用0x01分隔
@@ -5706,7 +5706,10 @@ userId:e1f920d0-beb4-11e6-98b8-69381c15d525
 ### 8. note
 <a name="81"></a>
 #### 8.1 addNote :创建日记
-- 接口地址：/medicalManage/api/post/addNote
+- 接口地址：/medicalManage/api/
+
+
+Note
 方法：post(form-data)
 参数：
 userId:
