@@ -178,15 +178,15 @@ medicalManage后台接口文档
 <a name="01"></a>
 #### 0.1 message：获取短信验证码
 - 接口地址：/medicalManage/system/message
-	方法：post
-	参数：
-	mobile:
-	action:  forget/register
-	platform:resident/doctor
+- 方法：post
+- 参数：
+- mobile:
+- action:  forget/register
+- platform:resident/doctor
 
-	逻辑说明:
-	action = register时，通过 mobile +platform 查找用户，若用户不存在，则发送短信，否则提示错误信息；
-	action = forget时，通过 mobile +platform 查找用户，若用户存在，则发送短信，否则提示错误信息；
+- 逻辑说明:
+- action = register时，通过 mobile +platform 查找用户，若用户不存在，则发送短信，否则提示错误信息；
+- action = forget时，通过 mobile +platform 查找用户，若用户存在，则发送短信，否则提示错误信息；
 
 
 | 序号       |platform | action|   说明|
@@ -243,9 +243,9 @@ platform:resident
 <a name="02"></a>
 #### 0.2 province：根据省id，获取市列表
 - 接口地址：/medicalManage/system/province
-	方法：post
-	参数：
-	keyword:
+- 方法：post
+- 参数：
+- keyword:
 
 ```
 keyword:河
@@ -274,10 +274,10 @@ keyword:河
 <a name="03"></a>
 #### 0.3 city：根据市id，获取区列表
 - 接口地址：/medicalManage/system/city
-	方法：post
-	参数：
-	ProID: 所属省id
-	keyword:市名关键字
+- 方法：post
+- 参数：
+- ProID: 所属省id
+- keyword:市名关键字
 
 ```
 ProID:12
@@ -319,10 +319,10 @@ keyword:州
 <a name="04"></a>
 #### 0.4 region：获取区列表
 - 接口地址：/medicalManage/system/region
-方法：post
-参数：
-CityID:所属市id
-keyword:区名关键字
+- 方法：post
+- 参数：
+- CityID:所属市id
+- keyword:区名关键字
 
 ```
 CityID:98
@@ -376,12 +376,12 @@ keyword:
 <a name="011"></a>
 #### 01.1 创建一个讨论组
 - 接口地址：/medicalManage/system/im_group_add
-方法：post
-参数：
-groupname:群名称
-desc:群描述
-owner:管理员账号
-members:["wuwanyu","14911111111"]
+- 方法：post
+- 参数：
+- groupname:群名称
+- desc:群描述
+- owner:管理员账号
+- members:["wuwanyu","14911111111"]
 
 地址：
 http://localhost:5001/medicalManage/system/im_group_add
@@ -423,11 +423,11 @@ http://localhost:5001/medicalManage/system/im_group_add
 <a name="012"></a>
 #### 01.2 修改一个讨论组
 - 接口地址：/medicalManage/system/im_group_edit
-方法：post
-参数：
-group_id:群组id，必填
-groupname:群名
-desc:描述
+- 方法：post
+- 参数：
+- group_id:群组id，必填
+- groupname:群名
+- desc:描述
 
 地址：
 http://localhost:5001/medicalManage/system/im_group_edit
@@ -457,9 +457,9 @@ http://localhost:5001/medicalManage/system/im_group_edit
 <a name="013"></a>
 #### 01.3 删除一个讨论组
 - 接口地址：/medicalManage/system/im_group_delete
-方法：post
-参数：
-group_id:群组id，必填
+- 方法：post
+- 参数：
+- group_id:群组id，必填
 
 地址：
 http://localhost:5001/medicalManage/system/im_group_delete
@@ -489,14 +489,14 @@ http://localhost:5001/medicalManage/system/im_group_delete
 <a name="014"></a>
 #### 01.4 添加讨论组成员[单个]
 - 接口地址：/medicalManage/system/im_group_addUser
-方法：post
-参数：
-参数：
-group_id:群组id，必填
-username:
+- 方法：post
+- 参数：
+- 参数：
+- group_id:群组id，必填
+- username:
 
-地址：
-http://localhost:5001/medicalManage/system/im_group_addUser
+- 地址：
+- http://localhost:5001/medicalManage/system/im_group_addUser
 
 
 ```
@@ -551,10 +551,10 @@ http://localhost:5001/medicalManage/system/im_group_addUser
 <a name="014_1"></a>
 #### 01.4_1 添加讨论组成员[批量]
 - 接口地址：/medicalManage/system/im_group_addUsers
-方法：post
-参数：
-group_id:群组id，必填
-accountStr:一个或多个账号，逗号分隔
+- 方法：post
+- 参数：
+- group_id:群组id，必填
+- accountStr:一个或多个账号，逗号分隔
 
 ```
 accountStr:15084868481,13721264100
@@ -588,11 +588,11 @@ group_id:279177095341408796
 <a name="015"></a>
 #### 01.5 移除讨论组成员[单个]
 - 接口地址：/medicalManage/system/im_group_deleteUser
-方法：post
-参数：
-参数：
-group_id:群组id，必填
-username:
+- 方法：post
+- 参数：
+- 参数：
+- group_id:群组id，必填
+- username:
 
 地址：
 http://localhost:5001/medicalManage/system/im_group_deleteUser
@@ -626,10 +626,10 @@ http://localhost:5001/medicalManage/system/im_group_deleteUser
 <a name="01.5_1"></a>
 #### 01.5_1 移除讨论组成员[批量]
 - 接口地址：/medicalManage/system/im_group_deleteUsers
-方法：post
-参数：
-group_id:群组id，必填
-accountStr:一个或多个账号，逗号分隔
+- 方法：post
+- 参数：
+- group_id:群组id，必填
+- accountStr:一个或多个账号，逗号分隔
 
 ```
 accountStr:15084868481,13721264100
@@ -669,9 +669,9 @@ group_id:279177095341408796
 <a name="016"></a>
 #### 01.6 获取用户参与的所有讨论组
 - 接口地址：/medicalManage/system/im_group_getGroupListByUser
-方法：post
-参数：
-username:账号
+- 方法：post
+- 参数：
+- username:账号
 
 地址：
 http://localhost:5001/medicalManage/system/im_group_getGroupListByUser
@@ -723,12 +723,12 @@ username:18233561909
 <a name="017"></a>
 #### 01.7 获取讨论组所有成员
 - 接口地址：/medicalManage/system/im_group_getUserListByGroupId
-方法：post
-参数：
-group_id:群组id，必填
+- 方法：post
+- 参数：
+- group_id:群组id，必填
 
-地址：
-http://localhost:5001/medicalManage/system/im_group_getUserListByGroupId
+- 地址：
+- http://localhost:5001/medicalManage/system/im_group_getUserListByGroupId
 
 
 ```
@@ -763,11 +763,11 @@ group_id:279177095341408796
 <a name="018"></a>
 #### 01.8 发消息或群发消息
 - 接口地址：/medicalManage/system/im_message
-方法：post
-参数：
-accountStr:	收消息账号，多个账号之间用,分割
-msg:消息内容
-from:发消息人的账号
+- 方法：post
+- 参数：
+- accountStr:	收消息账号，多个账号之间用,分割
+- msg:消息内容
+- from:发消息人的账号
 
 ```
 accountStr:18233561908,18867365368
@@ -796,10 +796,10 @@ from:18233561909
 <a name="019"></a>
 ####01.9 getAgreedImGroupAndFriendList：获取群组及好友列表
 - 接口地址：/medicalManage/api/relation/getAgreedImGroupAndFriendList
-方法：post
-参数：
-objType:imFriend
-userId:当前登录用户的id
+- 方法：post
+- 参数：
+- objType:imFriend
+- userId:当前登录用户的id
 
 ```
 objType:imFriend
@@ -869,9 +869,9 @@ userId:e86fad20-b91a-11e6-945f-71d86d0db9d0
 <a name="0110"></a>
 ####01.10 getNoneAgreedImFriendList：获取申请好友列表
 - 接口地址：/medicalManage/api/relation/getNoneAgreedImFriendList
-方法：post
-参数：
-userId:当前登录用户的id
+- 方法：post
+- 参数：
+- userId:当前登录用户的id
 
 ```
 userId:e86fad20-b91a-11e6-945f-71d86d0db9d0
@@ -902,10 +902,10 @@ userId:e86fad20-b91a-11e6-945f-71d86d0db9d0
 <a name="0111"></a>
 ####01.11 getFriendListByImGroupId：根据群组id，获取好友列表
 - 接口地址：/medicalManage/api/relation/getFriendListByImGroupId
-方法：post
-参数：
-userId:当前登录用户的id
-imGroupId:群组id
+- 方法：post
+- 参数：
+- userId:当前登录用户的id
+- imGroupId:群组id
 
 ```
 parentId:82b2f660-cc2d-11e6-abe4-03e68f3955ea
@@ -936,10 +936,10 @@ userId:e86fad20-b91a-11e6-945f-71d86d0db9d0
 <a name="0117"></a>
 ####01.17 群发消息
 - 接口地址：/medicalManage/api/relation/getFriendListByImGroupId
-方法：post
-参数：
-userId:当前登录用户的id
-imGroupId:群组id
+- 法：post
+- 数：
+- serId:当前登录用户的id
+- mGroupId:群组id
 
 ```
 
@@ -948,9 +948,9 @@ imGroupId:群组id
 <a name="0118"></a>
 ####01.18 获取群发消息列表
 - 接口地址：/medicalManage/api/imMsgHistory/getListByAccount
-方法：post
-参数：
-account:当前登录用户的id
+- 方法：post
+- 参数：
+- account:当前登录用户的id
 
 ```
 
@@ -961,21 +961,21 @@ account:当前登录用户的id
 <a name="11"></a>
 #### 1.1 addNews :创建新闻
 - 接口地址：/medicalManage/api/news/addNews
-方法：post(form-data)
-参数：
-typeId:		新闻类型id
-typeName:		新闻类型名称
-title:		新闻名称
-content:	新闻内容
-from:		新闻来源
-icon:		新闻图标
-level:		新闻等级
+- 方法：post(form-data)
+- 参数：
+- typeId:		新闻类型id
+- typeName:		新闻类型名称
+- title:		新闻名称
+- content:	新闻内容
+- from:		新闻来源
+- icon:		新闻图标
+- level:		新闻等级
 
 
-地址：
-http://120.25.124.68:5001/medicalManage/api/news/addNews
-
-返回值：
+- 地址：
+- http://120.25.124.68:5001/medicalManage/api/news/addNews
+- 
+- 返回值：
 ```
 
 typeId:3
@@ -1005,19 +1005,19 @@ level:
 <a name="12"></a>
 #### 1.2 updateNews：修改新闻
 - 接口地址：/medicalManage/api/news/updateNews
-方法：post(form-data)
-参数：
-typeId:		新闻类型id
-typeName:		新闻类型名称
-title:		新闻名称
-content:	新闻内容
-from:		新闻来源
-newsId:		新闻id
-icon:		新闻图标
-level:		新闻等级
+- 方法：post(form-data)
+- 参数：
+- typeId:		新闻类型id
+- typeName:		新闻类型名称
+- title:		新闻名称
+- content:	新闻内容
+- from:		新闻来源
+- newsId:		新闻id
+- icon:		新闻图标
+- level:		新闻等级
 
-地址：
-http://120.25.124.68:5001/medicalManage/api/news/updateNews
+- 地址：
+- http://120.25.124.68:5001/medicalManage/api/news/updateNews
 
 ```
 title:任志强：今年房地产销售面积销售额都会创历史新高
@@ -1043,12 +1043,12 @@ newsId:14
 <a name="13"></a>
 #### 1.3 deleteNews：删除新闻
 - 接口地址：/medicalManage/api/news/deleteNews
-方法：post
-参数：
-newsId:新闻id
-
-地址：
-http://120.25.124.68:5001/medicalManage/api/news/deleteNews
+- 方法：post
+- 参数：
+- newsId:新闻id
+- 
+- 地址：
+- http://120.25.124.68:5001/medicalManage/api/news/deleteNews
 
 ```
 {
@@ -1076,15 +1076,15 @@ http://120.25.124.68:5001/medicalManage/api/news/deleteNews
 <a name="14"></a>
 #### 1.4 getListByTypeId ：根据类型ID，获取新闻列表
 - 接口地址：/medicalManage/api/news/getListByTypeId
-方法：post
-参数：
-typeId:		类型id
-
-说明：按发布时间倒叙排列
-
-地址：
-http://120.25.124.68:5001/medicalManage/api/news/getListByTypeId
-
+- 方法：post
+- 参数：
+- typeId:		类型id
+- 
+- 说明：按发布时间倒叙排列
+- 
+- 地址：
+- http://120.25.124.68:5001/medicalManage/api/news/getListByTypeId
+ 
 ```
 typeId:1
 
@@ -1160,13 +1160,13 @@ typeId:1
 <a name="15"></a>
 #### 1.5 getInfoByNewsId ：根绝newsid，获取新闻详情
 - 接口地址：/medicalManage/api/news/getInfoByNewsId
-方法：post
-参数：
-newsId:	新闻id
-userId:用户id
+- 方法：post
+- 参数：
+- newsId:	新闻id
+- userId:用户id
 
-地址：
-http://120.25.124.68:5001/medicalManage/api/news/getInfoByNewsId
+- 地址：
+- http://120.25.124.68:5001/medicalManage/api/news/getInfoByNewsId
 
 ```
 newsId:1
@@ -3282,34 +3282,34 @@ typeName:我的同事
 <a name="51"></a>
 #### 5.1 add：创建帖子/日记
 - 接口地址：/medicalManage/api/post/add
-方法：post(form-data)
-参数：
-userId:  //发帖人
-title:  //标题
-content:  //内容
-images: //图片，可接受多个
-itemId:  //项目id，多个之间用0x01分隔
-itemName:  //项目名称，多个之间用0x01分隔
-labelId:  //标签id，多个之间用0x01分隔
-labelName:  //标签名称，多个之间用0x01分隔
-parentId:  //社区id/日记本id，多个之间用0x01分隔
-parentName:   //type=post：parentId是社区id、type=note：parentId是日记本id。多个之间用0x01分隔
-type:帖子：post，日记：note。不传默认是post
+- 方法：post(form-data)
+- 参数：
+- userId:  //发帖人
+- title:  //标题
+- content:  //内容
+- images: //图片，可接受多个
+- itemId:  //项目id，多个之间用0x01分隔
+- itemName:  //项目名称，多个之间用0x01分隔
+- labelId:  //标签id，多个之间用0x01分隔
+- labelName:  //标签名称，多个之间用0x01分隔
+- parentId:  //社区id/日记本id，多个之间用0x01分隔
+- parentName:   //type=post：parentId是社区id、type=note：parentId是日记本id。多个之间用0x01分隔
+- type:帖子：post，日记：note。不传默认是post
+- 
+- --20200120新增以下4字段，多个之间用0x01分隔
+- hostId：//医院id  
+- hostName：//医院名称，多个之间用0x01分隔
+- orderId：//订单ID，多个之间用0x01分隔
+- orderName：//订单名称，多个之间用0x01分隔
+- proId:项目Id，多个之间用0x01分隔
+- proName:项目名称，多个之间用0x01分隔
+- doctorId：//医生id  
+- doctorName：//医生名称，多个之间用0x01分隔
 
---20200120新增以下4字段，多个之间用0x01分隔
-hostId：//医院id  
-hostName：//医院名称，多个之间用0x01分隔
-orderId：//订单ID，多个之间用0x01分隔
-orderName：//订单名称，多个之间用0x01分隔
-proId:项目Id，多个之间用0x01分隔
-proName:项目名称，多个之间用0x01分隔
-doctorId：//医生id  
-doctorName：//医生名称，多个之间用0x01分隔
-
-地址：
-http://120.25.124.68:5001/medicalManage/api/post/add
-
-添加笔记
+- 地址：
+- http://120.25.124.68:5001/medicalManage/api/post/add
+- 
+- 添加笔记
 ```
 userId:e86fad20-b91a-11e6-945f-71d86d0db9d0
 title:鼻综合整形记录
@@ -3351,20 +3351,20 @@ doctorName：
 <a name="52"></a>
 #### 5.2 update：修改帖子/日记
 - 接口地址：/medicalManage/api/post/update
-方法：post(form-data)
-参数：
-postId:帖子id
-itemId:  //项目id，多个之间用0x01分隔
-itemName:  //项目名称，多个之间用0x01分隔
-labelId:  //标签id，多个之间用0x01分隔
-labelName:  //标签名称，多个之间用0x01分隔
-parentId:  //type=post：parentId是社区id、type=note：parentId是日记本id。多个之间用0x01分隔
-parentName:  //社区名称，多个之间用0x01分隔
-
-地址：
-http://120.25.124.68:5001/medicalManage/api/post/update
-
-修改
+- 方法：post(form-data)
+- 参数：
+- postId:帖子id
+- itemId:  //项目id，多个之间用0x01分隔
+- itemName:  //项目名称，多个之间用0x01分隔
+- labelId:  //标签id，多个之间用0x01分隔
+- labelName:  //标签名称，多个之间用0x01分隔
+- parentId:  //type=post：parentId是社区id、type=note：parentId是日记本id。多个之间用0x01分隔
+- parentName:  //社区名称，多个之间用0x01分隔
+- 
+- 地址：
+- http://120.25.124.68:5001/medicalManage/api/post/update
+- 
+- 修改
 ```
 
 ```
@@ -3372,15 +3372,15 @@ http://120.25.124.68:5001/medicalManage/api/post/update
 <a name="53"></a>
 #### 5.3 delete：删除帖子/日记
 - 接口地址：/medicalManage/api/post/delete
-方法：post
-参数：
-postId:笔记/帖子id
-
-
-地址：
-http://120.25.124.68:5001/medicalManage/api/post/delete
-
-删除
+- 方法：post
+- 参数：
+- postId:笔记/帖子id
+- 
+- 
+- 地址：
+- http://120.25.124.68:5001/medicalManage/api/post/delete
+- 
+- 删除
 ```
 
 ```
@@ -3391,17 +3391,17 @@ http://120.25.124.68:5001/medicalManage/api/post/delete
 <a name="514"></a>
 #### 5.14 getListByXXX：根据条件，获取帖子或日记列表
 - 接口地址：/medicalManage/api/post/getListByXXX
-方法：post
-参数：
-parentId:社区id
-userId:发帖人id
-itemId:项目id
-keyword:关键字
-type:post/note
-myId:当前登录用户id
-
-地址：
-http://120.25.124.68:5001/medicalManage/api/post/getListByXXX
+- 方法：post
+- 参数：
+- parentId:社区id
+- userId:发帖人id
+- itemId:项目id
+- keyword:关键字
+- type:post/note
+- myId:当前登录用户id
+- 
+- 地址：
+- http://120.25.124.68:5001/medicalManage/api/post/getListByXXX
 
 ```
 {
@@ -3442,12 +3442,12 @@ http://120.25.124.68:5001/medicalManage/api/post/getListByXXX
 <a name="55"></a>
 #### 5.5 getNoteListByNotebookId：根据笔记本ID，获取笔记列表
 - 接口地址：/medicalManage/api/post/getNoteListByNotebookId
-方法：post
-参数：
-notebookId:笔记本id
-
-地址：
-http://120.25.124.68:5001/medicalManage/api/post/getNoteListByNotebookId
+- 方法：post
+- 参数：
+- notebookId:笔记本id
+- 
+- 地址：
+- http://120.25.124.68:5001/medicalManage/api/post/getNoteListByNotebookId
 
 
 ```
@@ -3494,13 +3494,13 @@ notebookId:1
 <a name="57"></a>
 #### 5.7 getInfo：获取详情
 - 接口地址：/medicalManage/api/post/getInfo
-方法：post
-参数：
-postId:帖子或笔记id
-userId:当前登录用户的userId
-type:post/note，帖子/日记
-地址：
-http://120.25.124.68:5001/medicalManage/api/post/getInfo
+- 方法：post
+- 参数：
+- postId:帖子或笔记id
+- userId:当前登录用户的userId
+- type:post/note，帖子/日记
+- 地址：
+- http://120.25.124.68:5001/medicalManage/api/post/getInfo
 
 ```
 postId:26
@@ -3636,13 +3636,13 @@ userId:4b213800-c35a-11e6-a2cd-e377470ab12b
 <a name="58"></a>
 #### 5.8 getInfoAndCommentList：获取详情及评论列表
 - 接口地址：/medicalManage/api/post/getInfoAndCommentList
-方法：post
-参数：
-postId:帖子或笔记id
-
-
-地址：
-http://120.25.124.68:5001/medicalManage/api/post/getInfoAndCommentList
+- 方法：post
+- 参数：
+- postId:帖子或笔记id
+- 
+- 
+- 地址：
+- http://120.25.124.68:5001/medicalManage/api/post/getInfoAndCommentList
 
 
 ```
@@ -3703,14 +3703,14 @@ postId:7fd91130-cd87-11e6-afb5-870770b90a75
 <a name="515"></a>
 ####5.15 getNoteFromMyFocusUser：根据userid，获取我关注的用户的日记
 - 接口地址：/medicalManage/api/post/getNoteFromMyFocusUser
-方法：post
-参数：
-userId:用户id
-page:页码，默认1
-limit:条数，默认10
-
-地址：
-http://localhost:5001/medicalManage/api/post/getNoteFromMyFocusUser
+- 方法：post
+- 参数：
+- userId:用户id
+- page:页码，默认1
+- limit:条数，默认10
+- 
+- 地址：
+- http://localhost:5001/medicalManage/api/post/getNoteFromMyFocusUser
 
 ```
 userId:4b213800-c35a-11e6-a2cd-e377470ab12b
@@ -3753,14 +3753,14 @@ userId:4b213800-c35a-11e6-a2cd-e377470ab12b
 <a name="515_1"></a>
 #### 5.15_1 getNoteFromFocusMeUser：根据userid，获取关注我的用户的日记
 - 接口地址：/medicalManage/api/post/getNoteFromFocusMeUser
-方法：post
-参数：
-userId:用户id
-page:页码，默认1
-limit:条数，默认10
-
-地址：
-http://localhost:5001/medicalManage/api/user/getNoteFromFocusMeUser
+- 方法：post
+- 参数：
+- userId:用户id
+- page:页码，默认1
+- limit:条数，默认10
+- 
+- 地址：
+- http://localhost:5001/medicalManage/api/user/getNoteFromFocusMeUser
 
 ```
 userId:4b213800-c35a-11e6-a2cd-e377470ab12b
